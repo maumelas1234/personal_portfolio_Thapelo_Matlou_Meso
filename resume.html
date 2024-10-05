@@ -26,7 +26,7 @@
 
         <!-- Global Menu -->
         <div id="global_menu_button_container">
-            <p class="site_title">Thapelo Matlou Mes</p>
+            <p class="site_title">Thapelo Matlou Meso</p>
             <i class="fa fa-bars" id="global_menu_button"></i>
         </div>
 
@@ -55,7 +55,7 @@
             <!-- sidebar Content -->
             <div class="sidebar_content">
                 <!-- Long name can be applied so easily -->
-                <h1>Thapelo Matlou Mes</h1>
+                <h1>Thapelo Matlou Meso</h1>
                 <p>Website Designer</p>
                 <!-- Social Medias -->
                 <div class="social_media">
@@ -91,29 +91,73 @@
                     <!-- Experience container -->
                     <div class="left_resume">
                         <h2 class="resume_title"><i class="fa fa-suitcase"></i> Experience</h2>
-                        <div class="resume_box">
-                            <span class="resume_date">2019-Present</span>
-                            <p class="resume_box_title">Art Director</p>
-                            <p class="resume_conpany">Google Inc</p>
-                            <p class="resume_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                                doloremque.</p>
+                    
+                        <!-- Experience 1 -->
+                        <di<div class="left_resume">
+                            <h2 class="resume_title"><i class="fa fa-suitcase"></i> Experience</h2>
+                        
+                            <!-- Experience 1 -->
+                            <div class="resume_box" id="experience1">
+                                <span class="resume_date">2019-Present</span>
+                                <p class="resume_box_title">Art Director</p>
+                                <p class="resume_conpany">Google Inc</p>
+                                <p class="resume_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloremque.</p>
+                                <button onclick="toggleEditForm('editForm1')">Edit</button>
+                                <button onclick="deleteExperience('experience1')">Delete</button>
+                        
+                                <!-- Edit form -->
+                                <div id="editForm1" class="edit_form" style="display:none;">
+                                    <input type="text" id="startDate1" value="2019">
+                                    <input type="text" id="endDate1" value="Present">
+                                    <input type="text" id="title1" value="Art Director">
+                                    <input type="text" id="company1" value="Google Inc">
+                                    <textarea id="description1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloremque.</textarea>
+                                    <button onclick="saveExperience('experience1', 1)">Save</button>
+                                </div>
+                            </div>
+                        
+                            <!-- Experience 2 -->
+                            <div class="resume_box" id="experience2">
+                                <span class="resume_date">2016-2019</span>
+                                <p class="resume_box_title">Developer</p>
+                                <p class="resume_conpany">Microsoft</p>
+                                <p class="resume_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloremque.</p>
+                                <button onclick="toggleEditForm('editForm2')">Edit</button>
+                                <button onclick="deleteExperience('experience2')">Delete</button>
+                        
+                                <!-- Edit form -->
+                                <div id="editForm2" class="edit_form" style="display:none;">
+                                    <input type="text" id="startDate2" value="2016">
+                                    <input type="text" id="endDate2" value="2019">
+                                    <input type="text" id="title2" value="Developer">
+                                    <input type="text" id="company2" value="Microsoft">
+                                    <textarea id="description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloremque.</textarea>
+                                    <button onclick="saveExperience('experience2', 2)">Save</button>
+                                </div>
+                            </div>
+                        
+                            <!-- Experience 3 -->
+                            <div class="resume_box" id="experience3">
+                                <span class="resume_date">2014-2016</span>
+                                <p class="resume_box_title">Designer</p>
+                                <p class="resume_conpany">AliveCoder</p>
+                                <p class="resume_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloremque.</p>
+                                <button onclick="toggleEditForm('editForm3')">Edit</button>
+                                <button onclick="deleteExperience('experience3')">Delete</button>
+                        
+                                <!-- Edit form -->
+                                <div id="editForm3" class="edit_form" style="display:none;">
+                                    <input type="text" id="startDate3" value="2014">
+                                    <input type="text" id="endDate3" value="2016">
+                                    <input type="text" id="title3" value="Designer">
+                                    <input type="text" id="company3" value="AliveCoder">
+                                    <textarea id="description3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloremque.</textarea>
+                                    <button onclick="saveExperience('experience3', 3)">Save</button>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="resume_box">
-                            <span class="resume_date">2016-2019</span>
-                            <p class="resume_box_title">Developer</p>
-                            <p class="resume_conpany">Microsoft</p>
-                            <p class="resume_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                                doloremque.</p>
-                        </div>
-
-                        <div class="resume_box">
-                            <span class="resume_date">2014-2016</span>
-                            <p class="resume_box_title">Designer</p>
-                            <p class="resume_conpany">AliveCoder</p>
-                            <p class="resume_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                                doloremque.</p>
-                        </div>
+                        
+                    
                     </div>
 
                     <!-- Education Container -->
